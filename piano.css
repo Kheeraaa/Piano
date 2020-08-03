@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+.keys {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(6 , auto);
+    grid-gap: 0px;
+    bottom: 0%;
+    background: none;
+   
+}
+
+.key {
+    height: 130px;
+    width: 180px;
+    border: none;
+    display: flex;
+    background: none;
+    
+}
+
+.key1 {
+    background: #f5a6be;
+}
+.key2 {
+    background: #61f2a7
+}
+
+.key3 {
+    background: #4edaf2;
+}
+
+.key4 {
+    background: #e6e868;
+}
+.key5 {
+    background: #e099df;
+}
+
+.key6 {
+    background: #ff8797;
+}
+
+.key6.active {
+    background: #f5a6be;
+}
+.key5.active  {
+    background: #61f2a7
+}
+
+.key4.active  {
+    background: #4edaf2;
+}
+
+.key3.active {
+    background: #e6e868;
+}
+.key2.active  {
+    background: #e099df;
+}
+
+.key1.active  {
+    background: #ff8797;
+}
+
+h1 {
+    margin-right: 10px;
+    font-size: 6em;
+    margin-bottom: 30%;
+   font-weight: bold;
+   -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #333;
+}
+
+.p {
+    color: #4edaf2;
+}
+.i {
+     color: #61f2a7;
+ } 
+.a {
+    color: #e099df;
+}
+.n {
+    color: #e6e868;
+}
+.o {
+    color: #ff8797;
+    margin-right: 25px ;
+}
+
+
+@media (max-width:800px) {
+    .keys {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(6 , auto);
+        grid-gap: 0px;
+        bottom: 0%;
+    }
+    
+    .key {
+        height: 100px;
+        width: 120px;
+        display: flex;
+    }
+    
+}
+
+
+ .visual > div {
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      bottom: 0;
+      border-radius: 50%;
+      right: 50%;
+      z-index: -1;
+  } 
+
+  .visuals > div {
+    position: absolute;
+    border-radius: 50%;
+     height: 50px;
+    width: 50px;
+    right: 70%;
+    z-index: -1;
+} 
+
+.blueBubble > div {
+    position: absolute;
+    background-size: 35px ; 
+    border-radius: 50%;
+     height: 80px;
+    width: 80px;
+    bottom: 0;
+    right: 20%;
+    z-index: -1;
+} 
+
+@keyframes jump {
+    0%{
+
+        bottom: 30%;
+        background-color: #e6e868;
+    }
+    25% {
+        left: 80%;
+        bottom: 50%;
+        background-color: #e6e868;
+    }
+    50% {
+        left: 60%;
+        bottom: 30%;
+        background-color: #61f2a7;
+    }
+    75% {
+        left: 30%;
+        bottom: 60%;
+        background-color: #e099df;
+        border: 4px dashed white;
+    }
+
+    100% {
+        left: 20%;
+        bottom: 50%;
+        background-color: white;
+        border: 2px dashed #61f2a7;
+    }
+    
+    
+  }
+
+  @keyframes jump1 {
+    0%{
+        
+        bottom: 30%;
+        background-color: #61f2a7;
+    }
+    25% {
+        bottom: 50%;
+          background-color: #4edaf2;
+    }
+    50% {
+       
+        bottom: 70%;
+        background-color: #e6e868;
+    }
+    75% {
+        bottom: 60%;
+        background-color: #e099df;
+        border: 3px dashed white;
+    }
+
+    100% {
+        bottom: 60%;
+        background-color: white;
+        border: 2px dashed #ff8797;
+    }
+    
+    
+  }
+
+  @keyframes jump2 {
+    0%{
+
+        bottom: 30%;
+        background-color: #4edaf2;
+    }
+    25% {
+        right: 80%;
+        bottom: 50%;
+        background-color: #e6e868;
+    }
+    50% {
+        right: 60%;
+        bottom: 30%;
+        background-color: #4edaf2;
+    }
+    75% {
+        right: 30%;
+        bottom: 60%;
+        background-color: #61f2a7;
+        border: 3px dashed white;
+    }
+
+    100% {
+        right: 20%;
+        bottom: 50%;
+        background-color: white;
+        border: 2px dashed #4edaf2;
+    }
+    
+    
+  }
